@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { VehiculosComponent} from './vehiculos/vehiculos.component';
+import { VehiculosListComponent} from './vehiculos/vehiculos-list/vehiculos-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +12,7 @@ describe('AppComponent', () => {
         RouterTestingModule, HttpClientModule
       ],
       declarations: [
-        AppComponent, VehiculosComponent
+        AppComponent, VehiculosComponent, VehiculosListComponent
       ],
     }).compileComponents();
   });

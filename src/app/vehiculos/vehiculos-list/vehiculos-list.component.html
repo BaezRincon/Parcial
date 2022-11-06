@@ -2,14 +2,18 @@
   <div class="container-fluid">
     <div class="row">
       <table class="table">
-      <tr *ngFor="let c of totalVehiculo">
-          <td>
-            <dd>{{c.marca}}</dd>
-          </td>
-          <td>
-            <dd>{{c.total}}</dd>
-          </td>
-        </tr>
+        <thead>
+          <tr *ngFor="let totalVehiculo of totalVehiculo">
+            <td>
+              <dd>{{totalVehiculo.marca}}</dd>
+            </td>
+            <td>
+              <dd>{{totalVehiculo.total}}</dd>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
       </table>
     </div>
 
